@@ -1,0 +1,17 @@
+Analysis & Synthesis Status : Successful - Sun Oct 24 00:25:03 2021
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 Patches 1.02i SJ Lite Edition
+Revision Name : shift-register
+Top-level Entity Name : de0_nano_soc_baseline
+Family : Cyclone V
+Logic utilization (in ALMs) : N/A
+Total registers : 8
+Total pins : 15
+Total virtual pins : 0
+Total block memory bits : 0
+Total DSP Blocks : 0
+Total HSSI RX PCSs : 0
+Total HSSI PMA RX Deserializers : 0
+Total HSSI TX PCSs : 0
+Total HSSI PMA TX Serializers : 0
+Total PLLs : 0
+Total DLLs : 0

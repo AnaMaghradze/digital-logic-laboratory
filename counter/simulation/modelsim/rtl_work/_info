@@ -1,0 +1,59 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/ninom/OneDrive/Desktop/CE475/counter/simulation/modelsim
+vde0_nano_soc_baseline
+!s110 1634369667
+!i10b 1
+!s100 gLKQj0]dA_;cGDDTod23?1
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IgiiadIdGHH@fGXYcJNn2_1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1634369508
+8C:/Users/ninom/OneDrive/Desktop/CE475/counter/de0_nano_soc_baseline.v
+FC:/Users/ninom/OneDrive/Desktop/CE475/counter/de0_nano_soc_baseline.v
+!i122 3
+L0 1 27
+Z3 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1634369666.000000
+!s107 C:/Users/ninom/OneDrive/Desktop/CE475/counter/de0_nano_soc_baseline.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ninom/OneDrive/Desktop/CE475/counter|C:/Users/ninom/OneDrive/Desktop/CE475/counter/de0_nano_soc_baseline.v|
+!i113 1
+Z4 o-vlog01compat -work work
+Z5 !s92 -vlog01compat -work work +incdir+C:/Users/ninom/OneDrive/Desktop/CE475/counter
+Z6 tCvgOpt 0
+vtb
+!s110 1634369912
+!i10b 1
+!s100 cC4jE<G:L4A?jKAkjmZmi2
+R1
+IoEX4h_kgF[bXB9EH;0[:l2
+R2
+R0
+w1634369899
+8C:/Users/ninom/OneDrive/Desktop/CE475/counter/tb.v
+FC:/Users/ninom/OneDrive/Desktop/CE475/counter/tb.v
+!i122 6
+L0 1 23
+R3
+r1
+!s85 0
+31
+!s108 1634369912.000000
+!s107 C:/Users/ninom/OneDrive/Desktop/CE475/counter/tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ninom/OneDrive/Desktop/CE475/counter|C:/Users/ninom/OneDrive/Desktop/CE475/counter/tb.v|
+!i113 1
+R4
+R5
+R6

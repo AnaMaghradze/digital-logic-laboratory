@@ -1,0 +1,17 @@
+Analysis & Synthesis Status : Successful - Wed Oct 20 23:50:52 2021
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 Patches 1.02i SJ Lite Edition
+Revision Name : pressMultiplier
+Top-level Entity Name : de0_nano_soc_baseline
+Family : Cyclone V
+Logic utilization (in ALMs) : N/A
+Total registers : 22
+Total pins : 15
+Total virtual pins : 0
+Total block memory bits : 0
+Total DSP Blocks : 1
+Total HSSI RX PCSs : 0
+Total HSSI PMA RX Deserializers : 0
+Total HSSI TX PCSs : 0
+Total HSSI PMA TX Serializers : 0
+Total PLLs : 0
+Total DLLs : 0

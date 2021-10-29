@@ -1,0 +1,46 @@
+|de0_nano_soc_baseline
+CLOCK_50 => CLOCK_50.IN1
+SW[0] => SW[0].IN1
+SW[1] => SW[1].IN1
+SW[2] => SW[2].IN1
+SW[3] => SW[3].IN1
+KEY[0] => KEY[0].IN1
+KEY[1] => KEY[1].IN1
+LED[0] <= shift_register_checker:shiftRegCheck.port3
+LED[1] <= shift_register_checker:shiftRegCheck.port3
+LED[2] <= shift_register_checker:shiftRegCheck.port3
+LED[3] <= shift_register_checker:shiftRegCheck.port3
+LED[4] <= <GND>
+LED[5] <= <GND>
+LED[6] <= <GND>
+LED[7] <= <GND>
+
+
+|de0_nano_soc_baseline|shift_register_checker:shiftRegCheck
+clk => prevKey[0].CLK
+clk => data_out[0]~reg0.CLK
+clk => data_out[1]~reg0.CLK
+clk => data_out[2]~reg0.CLK
+clk => data_out[3]~reg0.CLK
+clk => state~1.DATAIN
+data_in[0] => Equal0.IN1
+data_in[0] => Equal1.IN31
+data_in[0] => Equal2.IN31
+data_in[1] => Equal0.IN0
+data_in[1] => Equal1.IN30
+data_in[1] => Equal2.IN1
+data_in[2] => Equal0.IN31
+data_in[2] => Equal1.IN0
+data_in[2] => Equal2.IN0
+data_in[3] => Equal0.IN30
+data_in[3] => Equal1.IN29
+data_in[3] => Equal2.IN30
+enter_in[0] => always0.IN1
+enter_in[0] => prevKey[0].DATAIN
+enter_in[1] => ~NO_FANOUT~
+data_out[0] <= data_out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_out[1] <= data_out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_out[2] <= data_out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_out[3] <= data_out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

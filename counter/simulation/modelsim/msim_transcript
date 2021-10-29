@@ -1,0 +1,164 @@
+# Reading pref.tcl
+# do counter_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/ninom/OneDrive/Desktop/CE475/counter {C:/Users/ninom/OneDrive/Desktop/CE475/counter/de0_nano_soc_baseline.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:32:31 on Oct 16,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/ninom/OneDrive/Desktop/CE475/counter" C:/Users/ninom/OneDrive/Desktop/CE475/counter/de0_nano_soc_baseline.v 
+# -- Compiling module de0_nano_soc_baseline
+# 
+# Top level modules:
+# 	de0_nano_soc_baseline
+# End time: 11:32:31 on Oct 16,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/ninom/OneDrive/Desktop/CE475/counter {C:/Users/ninom/OneDrive/Desktop/CE475/counter/tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:32:32 on Oct 16,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/ninom/OneDrive/Desktop/CE475/counter" C:/Users/ninom/OneDrive/Desktop/CE475/counter/tb.v 
+# -- Compiling module tb
+# 
+# Top level modules:
+# 	tb
+# End time: 11:32:32 on Oct 16,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vlog -vlog01compat -work work +incdir+C:/Users/ninom/OneDrive/Desktop/CE475/counter C:/Users/ninom/OneDrive/Desktop/CE475/counter/de0_nano_soc_baseline.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:32:38 on Oct 16,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/ninom/OneDrive/Desktop/CE475/counter" C:/Users/ninom/OneDrive/Desktop/CE475/counter/de0_nano_soc_baseline.v 
+# -- Compiling module de0_nano_soc_baseline
+# 
+# Top level modules:
+# 	de0_nano_soc_baseline
+# End time: 11:32:39 on Oct 16,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vsim work.tb
+# vsim work.tb 
+# Start time: 11:32:41 on Oct 16,2021
+# Loading work.tb
+# Loading work.de0_nano_soc_baseline
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'SW'. The port definition is at: C:/Users/ninom/OneDrive/Desktop/CE475/counter/de0_nano_soc_baseline.v(15).
+#    Time: 0 ps  Iteration: 0  Instance: /tb/counter File: C:/Users/ninom/OneDrive/Desktop/CE475/counter/tb.v Line: 7
+add wave -position insertpoint  \
+sim:/tb/sw \
+sim:/tb/led \
+sim:/tb/key \
+sim:/tb/clk
+add wave -position insertpoint  \
+sim:/tb/counter/counter
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+vlog -vlog01compat -work work +incdir+C:/Users/ninom/OneDrive/Desktop/CE475/counter C:/Users/ninom/OneDrive/Desktop/CE475/counter/de0_nano_soc_baseline.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:34:26 on Oct 16,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/ninom/OneDrive/Desktop/CE475/counter" C:/Users/ninom/OneDrive/Desktop/CE475/counter/de0_nano_soc_baseline.v 
+# -- Compiling module de0_nano_soc_baseline
+# 
+# Top level modules:
+# 	de0_nano_soc_baseline
+# End time: 11:34:27 on Oct 16,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+C:/Users/ninom/OneDrive/Desktop/CE475/counter C:/Users/ninom/OneDrive/Desktop/CE475/counter/tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:34:30 on Oct 16,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/ninom/OneDrive/Desktop/CE475/counter" C:/Users/ninom/OneDrive/Desktop/CE475/counter/tb.v 
+# -- Compiling module tb
+# 
+# Top level modules:
+# 	tb
+# End time: 11:34:30 on Oct 16,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.tb
+# End time: 11:34:34 on Oct 16,2021, Elapsed time: 0:01:53
+# Errors: 0, Warnings: 1
+# vsim work.tb 
+# Start time: 11:34:34 on Oct 16,2021
+# Loading work.tb
+# Loading work.de0_nano_soc_baseline
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'SW'. The port definition is at: C:/Users/ninom/OneDrive/Desktop/CE475/counter/de0_nano_soc_baseline.v(15).
+#    Time: 0 ps  Iteration: 0  Instance: /tb/counter File: C:/Users/ninom/OneDrive/Desktop/CE475/counter/tb.v Line: 7
+add wave -position insertpoint  \
+sim:/tb/sw \
+sim:/tb/led \
+sim:/tb/key \
+sim:/tb/clk
+add wave -position insertpoint  \
+sim:/tb/counter/counter
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/ninom/OneDrive/Desktop/CE475/counter/simulation/modelsim/wave.do
+run
+run
+run
+run
+run
+run
+run
+run
+vlog -vlog01compat -work work +incdir+C:/Users/ninom/OneDrive/Desktop/CE475/counter C:/Users/ninom/OneDrive/Desktop/CE475/counter/tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:37:17 on Oct 16,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/ninom/OneDrive/Desktop/CE475/counter" C:/Users/ninom/OneDrive/Desktop/CE475/counter/tb.v 
+# -- Compiling module tb
+# 
+# Top level modules:
+# 	tb
+# End time: 11:37:17 on Oct 16,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.tb
+# End time: 11:37:22 on Oct 16,2021, Elapsed time: 0:02:48
+# Errors: 0, Warnings: 1
+# vsim work.tb 
+# Start time: 11:37:22 on Oct 16,2021
+# Loading work.tb
+# Loading work.de0_nano_soc_baseline
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'SW'. The port definition is at: C:/Users/ninom/OneDrive/Desktop/CE475/counter/de0_nano_soc_baseline.v(15).
+#    Time: 0 ps  Iteration: 0  Instance: /tb/counter File: C:/Users/ninom/OneDrive/Desktop/CE475/counter/tb.v Line: 7
+do C:/Users/ninom/OneDrive/Desktop/CE475/counter/simulation/modelsim/wave.do
+run
+run
+run
+run
+vlog -vlog01compat -work work +incdir+C:/Users/ninom/OneDrive/Desktop/CE475/counter C:/Users/ninom/OneDrive/Desktop/CE475/counter/tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:38:32 on Oct 16,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/ninom/OneDrive/Desktop/CE475/counter" C:/Users/ninom/OneDrive/Desktop/CE475/counter/tb.v 
+# -- Compiling module tb
+# 
+# Top level modules:
+# 	tb
+# End time: 11:38:32 on Oct 16,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.tb
+# End time: 11:38:39 on Oct 16,2021, Elapsed time: 0:01:17
+# Errors: 0, Warnings: 1
+# vsim work.tb 
+# Start time: 11:38:39 on Oct 16,2021
+# Loading work.tb
+# Loading work.de0_nano_soc_baseline
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'SW'. The port definition is at: C:/Users/ninom/OneDrive/Desktop/CE475/counter/de0_nano_soc_baseline.v(15).
+#    Time: 0 ps  Iteration: 0  Instance: /tb/counter File: C:/Users/ninom/OneDrive/Desktop/CE475/counter/tb.v Line: 7
+do C:/Users/ninom/OneDrive/Desktop/CE475/counter/simulation/modelsim/wave.do
+run
+run
+run
+run
+restart
+# End time: 11:40:04 on Oct 16,2021, Elapsed time: 0:01:25
+# Errors: 0, Warnings: 1

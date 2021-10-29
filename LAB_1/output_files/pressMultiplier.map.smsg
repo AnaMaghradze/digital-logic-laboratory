@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at de0_nano_soc_baseline.v(18): always construct contains both blocking and non-blocking assignments File: C:/Users/ninom/OneDrive/Desktop/CE475/Lab_1/de0_nano_soc_baseline.v Line: 18
