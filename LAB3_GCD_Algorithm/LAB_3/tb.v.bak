@@ -1,0 +1,11 @@
+module tb;
+	reg clk = 0;
+	reg [3:0] data_in = 0;
+	reg [1:0] enter_in = 0;
+	wire [3:0] data_out;
+de0_nano_soc_baseline gcd(clk, data_in, enter_in, data_out);
+
+always #5 clk <= ~clk;
+
+
+endmodule

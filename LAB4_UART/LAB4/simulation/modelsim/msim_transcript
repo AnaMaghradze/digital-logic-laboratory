@@ -1,0 +1,336 @@
+# Reading pref.tcl
+# do UART_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/ninom/OneDrive/Desktop/470L/LAB4 {C:/Users/ninom/OneDrive/Desktop/470L/LAB4/de0_nano_soc_baseline.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:36:45 on Dec 04,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/ninom/OneDrive/Desktop/470L/LAB4" C:/Users/ninom/OneDrive/Desktop/470L/LAB4/de0_nano_soc_baseline.v 
+# -- Compiling module de0_nano_soc_baseline
+# 
+# Top level modules:
+# 	de0_nano_soc_baseline
+# End time: 22:36:45 on Dec 04,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/ninom/OneDrive/Desktop/470L/LAB4 {C:/Users/ninom/OneDrive/Desktop/470L/LAB4/RX.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:36:47 on Dec 04,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/ninom/OneDrive/Desktop/470L/LAB4" C:/Users/ninom/OneDrive/Desktop/470L/LAB4/RX.v 
+# -- Compiling module receiver
+# 
+# Top level modules:
+# 	receiver
+# End time: 22:36:47 on Dec 04,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/ninom/OneDrive/Desktop/470L/LAB4 {C:/Users/ninom/OneDrive/Desktop/470L/LAB4/TX.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:36:47 on Dec 04,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/ninom/OneDrive/Desktop/470L/LAB4" C:/Users/ninom/OneDrive/Desktop/470L/LAB4/TX.v 
+# -- Compiling module transmitter
+# 
+# Top level modules:
+# 	transmitter
+# End time: 22:36:47 on Dec 04,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/ninom/OneDrive/Desktop/470L/LAB4 {C:/Users/ninom/OneDrive/Desktop/470L/LAB4/tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:36:47 on Dec 04,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/ninom/OneDrive/Desktop/470L/LAB4" C:/Users/ninom/OneDrive/Desktop/470L/LAB4/tb.v 
+# -- Compiling module tb
+# ** Warning: C:/Users/ninom/OneDrive/Desktop/470L/LAB4/tb.v(14): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: C:/Users/ninom/OneDrive/Desktop/470L/LAB4/tb.v(18): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# Top level modules:
+# 	tb
+# End time: 22:36:48 on Dec 04,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 2
+# 
+vsim work.tb
+# vsim work.tb 
+# Start time: 22:37:25 on Dec 04,2021
+# Loading work.tb
+# Loading work.de0_nano_soc_baseline
+# Loading work.transmitter
+# Loading work.receiver
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (20) for port 'Rx'. The port definition is at: C:/Users/ninom/OneDrive/Desktop/470L/LAB4/RX.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /tb/UAreRatherTiring/rx File: C:/Users/ninom/OneDrive/Desktop/470L/LAB4/de0_nano_soc_baseline.v Line: 32
+# ** Warning: (vsim-3015) [PCDPC] - Port size (20) does not match connection size (1) for port 'baudRate'. The port definition is at: C:/Users/ninom/OneDrive/Desktop/470L/LAB4/RX.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /tb/UAreRatherTiring/rx File: C:/Users/ninom/OneDrive/Desktop/470L/LAB4/de0_nano_soc_baseline.v Line: 32
+add wave -position insertpoint  \
+sim:/tb/SW \
+sim:/tb/LED \
+sim:/tb/KEY \
+sim:/tb/clk
+add wave -position insertpoint  \
+sim:/tb/UAreRatherTiring/Tx \
+sim:/tb/UAreRatherTiring/SW \
+sim:/tb/UAreRatherTiring/START_TX \
+sim:/tb/UAreRatherTiring/plc \
+sim:/tb/UAreRatherTiring/LED \
+sim:/tb/UAreRatherTiring/KEY \
+sim:/tb/UAreRatherTiring/data_out \
+sim:/tb/UAreRatherTiring/data \
+sim:/tb/UAreRatherTiring/baudRate
+add wave -position insertpoint  \
+sim:/tb/UAreRatherTiring/tx/Tx \
+sim:/tb/UAreRatherTiring/tx/tming \
+sim:/tb/UAreRatherTiring/tx/stopping \
+sim:/tb/UAreRatherTiring/tx/starting \
+sim:/tb/UAreRatherTiring/tx/st_tx \
+sim:/tb/UAreRatherTiring/tx/opb \
+sim:/tb/UAreRatherTiring/tx/dttm \
+sim:/tb/UAreRatherTiring/tx/data \
+sim:/tb/UAreRatherTiring/tx/cnt \
+sim:/tb/UAreRatherTiring/tx/clock \
+sim:/tb/UAreRatherTiring/tx/clkhz \
+sim:/tb/UAreRatherTiring/tx/clkcnt \
+sim:/tb/UAreRatherTiring/tx/baudRate
+add wave -position insertpoint  \
+sim:/tb/UAreRatherTiring/rx/Rx \
+sim:/tb/UAreRatherTiring/rx/received \
+sim:/tb/UAreRatherTiring/rx/data_out \
+sim:/tb/UAreRatherTiring/rx/cnt \
+sim:/tb/UAreRatherTiring/rx/CLOCK \
+sim:/tb/UAreRatherTiring/rx/clkhz \
+sim:/tb/UAreRatherTiring/rx/clkcnt \
+sim:/tb/UAreRatherTiring/rx/baudRate
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (20) for port 'Rx'. The port definition is at: C:/Users/ninom/OneDrive/Desktop/470L/LAB4/RX.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /tb/UAreRatherTiring/rx File: C:/Users/ninom/OneDrive/Desktop/470L/LAB4/de0_nano_soc_baseline.v Line: 32
+# ** Warning: (vsim-3015) [PCDPC] - Port size (20) does not match connection size (1) for port 'baudRate'. The port definition is at: C:/Users/ninom/OneDrive/Desktop/470L/LAB4/RX.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /tb/UAreRatherTiring/rx File: C:/Users/ninom/OneDrive/Desktop/470L/LAB4/de0_nano_soc_baseline.v Line: 32
+run -all
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (20) for port 'Rx'. The port definition is at: C:/Users/ninom/OneDrive/Desktop/470L/LAB4/RX.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /tb/UAreRatherTiring/rx File: C:/Users/ninom/OneDrive/Desktop/470L/LAB4/de0_nano_soc_baseline.v Line: 32
+# ** Warning: (vsim-3015) [PCDPC] - Port size (20) does not match connection size (1) for port 'baudRate'. The port definition is at: C:/Users/ninom/OneDrive/Desktop/470L/LAB4/RX.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /tb/UAreRatherTiring/rx File: C:/Users/ninom/OneDrive/Desktop/470L/LAB4/de0_nano_soc_baseline.v Line: 32
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+vlog -vlog01compat -work work +incdir+C:/Users/ninom/OneDrive/Desktop/470L/LAB4 C:/Users/ninom/OneDrive/Desktop/470L/LAB4/de0_nano_soc_baseline.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:51:32 on Dec 04,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/ninom/OneDrive/Desktop/470L/LAB4" C:/Users/ninom/OneDrive/Desktop/470L/LAB4/de0_nano_soc_baseline.v 
+# -- Compiling module de0_nano_soc_baseline
+# 
+# Top level modules:
+# 	de0_nano_soc_baseline
+# End time: 22:51:32 on Dec 04,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+C:/Users/ninom/OneDrive/Desktop/470L/LAB4 C:/Users/ninom/OneDrive/Desktop/470L/LAB4/RX.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:51:33 on Dec 04,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/ninom/OneDrive/Desktop/470L/LAB4" C:/Users/ninom/OneDrive/Desktop/470L/LAB4/RX.v 
+# -- Compiling module receiver
+# 
+# Top level modules:
+# 	receiver
+# End time: 22:51:33 on Dec 04,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+C:/Users/ninom/OneDrive/Desktop/470L/LAB4 C:/Users/ninom/OneDrive/Desktop/470L/LAB4/tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:51:33 on Dec 04,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/ninom/OneDrive/Desktop/470L/LAB4" C:/Users/ninom/OneDrive/Desktop/470L/LAB4/tb.v 
+# -- Compiling module tb
+# ** Warning: C:/Users/ninom/OneDrive/Desktop/470L/LAB4/tb.v(14): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: C:/Users/ninom/OneDrive/Desktop/470L/LAB4/tb.v(18): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# Top level modules:
+# 	tb
+# End time: 22:51:33 on Dec 04,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+vlog -vlog01compat -work work +incdir+C:/Users/ninom/OneDrive/Desktop/470L/LAB4 C:/Users/ninom/OneDrive/Desktop/470L/LAB4/TX.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:51:33 on Dec 04,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/ninom/OneDrive/Desktop/470L/LAB4" C:/Users/ninom/OneDrive/Desktop/470L/LAB4/TX.v 
+# -- Compiling module transmitter
+# 
+# Top level modules:
+# 	transmitter
+# End time: 22:51:33 on Dec 04,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb
+# Loading work.de0_nano_soc_baseline
+# Loading work.transmitter
+# Loading work.receiver
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (20) for port 'Rx'. The port definition is at: C:/Users/ninom/OneDrive/Desktop/470L/LAB4/RX.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /tb/UAreRatherTiring/rx File: C:/Users/ninom/OneDrive/Desktop/470L/LAB4/de0_nano_soc_baseline.v Line: 32
+# ** Warning: (vsim-3015) [PCDPC] - Port size (20) does not match connection size (1) for port 'baudRate'. The port definition is at: C:/Users/ninom/OneDrive/Desktop/470L/LAB4/RX.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /tb/UAreRatherTiring/rx File: C:/Users/ninom/OneDrive/Desktop/470L/LAB4/de0_nano_soc_baseline.v Line: 32
+run
+run
+run
+run
+run
+vlog -vlog01compat -work work +incdir+C:/Users/ninom/OneDrive/Desktop/470L/LAB4 C:/Users/ninom/OneDrive/Desktop/470L/LAB4/de0_nano_soc_baseline.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:53:46 on Dec 04,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/ninom/OneDrive/Desktop/470L/LAB4" C:/Users/ninom/OneDrive/Desktop/470L/LAB4/de0_nano_soc_baseline.v 
+# -- Compiling module de0_nano_soc_baseline
+# 
+# Top level modules:
+# 	de0_nano_soc_baseline
+# End time: 22:53:46 on Dec 04,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+C:/Users/ninom/OneDrive/Desktop/470L/LAB4 C:/Users/ninom/OneDrive/Desktop/470L/LAB4/RX.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:53:47 on Dec 04,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/ninom/OneDrive/Desktop/470L/LAB4" C:/Users/ninom/OneDrive/Desktop/470L/LAB4/RX.v 
+# -- Compiling module receiver
+# 
+# Top level modules:
+# 	receiver
+# End time: 22:53:47 on Dec 04,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+C:/Users/ninom/OneDrive/Desktop/470L/LAB4 C:/Users/ninom/OneDrive/Desktop/470L/LAB4/tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:53:47 on Dec 04,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/ninom/OneDrive/Desktop/470L/LAB4" C:/Users/ninom/OneDrive/Desktop/470L/LAB4/tb.v 
+# -- Compiling module tb
+# ** Warning: C:/Users/ninom/OneDrive/Desktop/470L/LAB4/tb.v(14): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: C:/Users/ninom/OneDrive/Desktop/470L/LAB4/tb.v(18): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# Top level modules:
+# 	tb
+# End time: 22:53:47 on Dec 04,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+vlog -vlog01compat -work work +incdir+C:/Users/ninom/OneDrive/Desktop/470L/LAB4 C:/Users/ninom/OneDrive/Desktop/470L/LAB4/TX.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:53:47 on Dec 04,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/ninom/OneDrive/Desktop/470L/LAB4" C:/Users/ninom/OneDrive/Desktop/470L/LAB4/TX.v 
+# -- Compiling module transmitter
+# 
+# Top level modules:
+# 	transmitter
+# End time: 22:53:47 on Dec 04,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb
+# Loading work.de0_nano_soc_baseline
+# Loading work.transmitter
+# Loading work.receiver
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+vlog -vlog01compat -work work +incdir+C:/Users/ninom/OneDrive/Desktop/470L/LAB4 C:/Users/ninom/OneDrive/Desktop/470L/LAB4/de0_nano_soc_baseline.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:58:16 on Dec 04,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/ninom/OneDrive/Desktop/470L/LAB4" C:/Users/ninom/OneDrive/Desktop/470L/LAB4/de0_nano_soc_baseline.v 
+# -- Compiling module de0_nano_soc_baseline
+# 
+# Top level modules:
+# 	de0_nano_soc_baseline
+# End time: 22:58:16 on Dec 04,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+C:/Users/ninom/OneDrive/Desktop/470L/LAB4 C:/Users/ninom/OneDrive/Desktop/470L/LAB4/RX.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:58:16 on Dec 04,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/ninom/OneDrive/Desktop/470L/LAB4" C:/Users/ninom/OneDrive/Desktop/470L/LAB4/RX.v 
+# -- Compiling module receiver
+# 
+# Top level modules:
+# 	receiver
+# End time: 22:58:16 on Dec 04,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+C:/Users/ninom/OneDrive/Desktop/470L/LAB4 C:/Users/ninom/OneDrive/Desktop/470L/LAB4/tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:58:16 on Dec 04,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/ninom/OneDrive/Desktop/470L/LAB4" C:/Users/ninom/OneDrive/Desktop/470L/LAB4/tb.v 
+# -- Compiling module tb
+# 
+# Top level modules:
+# 	tb
+# End time: 22:58:17 on Dec 04,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+C:/Users/ninom/OneDrive/Desktop/470L/LAB4 C:/Users/ninom/OneDrive/Desktop/470L/LAB4/TX.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:58:17 on Dec 04,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/ninom/OneDrive/Desktop/470L/LAB4" C:/Users/ninom/OneDrive/Desktop/470L/LAB4/TX.v 
+# -- Compiling module transmitter
+# 
+# Top level modules:
+# 	transmitter
+# End time: 22:58:17 on Dec 04,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.tb
+# Loading work.de0_nano_soc_baseline
+# Loading work.transmitter
+# Loading work.receiver
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# End time: 23:02:09 on Dec 04,2021, Elapsed time: 0:24:44
+# Errors: 0, Warnings: 0

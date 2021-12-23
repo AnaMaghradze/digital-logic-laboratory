@@ -1,0 +1,66 @@
+# Reading pref.tcl
+# do ADC_reading_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/ninom/OneDrive/Desktop/LAB_6 {C:/Users/ninom/OneDrive/Desktop/LAB_6/de0_nano_soc_baseline.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 01:38:04 on Dec 21,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/ninom/OneDrive/Desktop/LAB_6" C:/Users/ninom/OneDrive/Desktop/LAB_6/de0_nano_soc_baseline.v 
+# -- Compiling module de0_nano_soc_baseline
+# 
+# Top level modules:
+# 	de0_nano_soc_baseline
+# End time: 01:38:04 on Dec 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/ninom/OneDrive/Desktop/LAB_6 {C:/Users/ninom/OneDrive/Desktop/LAB_6/segmet_decoder.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 01:38:05 on Dec 21,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/ninom/OneDrive/Desktop/LAB_6" C:/Users/ninom/OneDrive/Desktop/LAB_6/segmet_decoder.v 
+# -- Compiling module segment_decoder
+# 
+# Top level modules:
+# 	segment_decoder
+# End time: 01:38:06 on Dec 21,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/ninom/OneDrive/Desktop/LAB_6 {C:/Users/ninom/OneDrive/Desktop/LAB_6/digit_at_position_decoder.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 01:38:06 on Dec 21,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/ninom/OneDrive/Desktop/LAB_6" C:/Users/ninom/OneDrive/Desktop/LAB_6/digit_at_position_decoder.v 
+# -- Compiling module digit_at_position_decoder
+# 
+# Top level modules:
+# 	digit_at_position_decoder
+# End time: 01:38:06 on Dec 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/ninom/OneDrive/Desktop/LAB_6 {C:/Users/ninom/OneDrive/Desktop/LAB_6/tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 01:38:06 on Dec 21,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/ninom/OneDrive/Desktop/LAB_6" C:/Users/ninom/OneDrive/Desktop/LAB_6/tb.v 
+# -- Compiling module tb
+# 
+# Top level modules:
+# 	tb
+# End time: 01:38:06 on Dec 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/ninom/OneDrive/Desktop/LAB_6 {C:/Users/ninom/OneDrive/Desktop/LAB_6/ADC.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 01:38:06 on Dec 21,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/ninom/OneDrive/Desktop/LAB_6" C:/Users/ninom/OneDrive/Desktop/LAB_6/ADC.sv 
+# -- Compiling module ADC
+# -- Compiling module SDO_bits_sender
+# 
+# Top level modules:
+# 	ADC
+# 	SDO_bits_sender
+# End time: 01:38:06 on Dec 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+do C:/Users/ninom/OneDrive/Desktop/LAB_6/simulation/modelsim/wave.do

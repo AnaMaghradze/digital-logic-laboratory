@@ -1,0 +1,161 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/ninom/OneDrive/Desktop/LAB_6/simulation/modelsim
+vADC
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z2 !s110 1640036286
+!i10b 1
+!s100 a>:>JfRKie=?3QJZQ=H;m3
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I<:28Mkg3g@0[Q6fk44YZG3
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+Z5 w1640036134
+Z6 8C:/Users/ninom/OneDrive/Desktop/LAB_6/ADC.sv
+Z7 FC:/Users/ninom/OneDrive/Desktop/LAB_6/ADC.sv
+!i122 4
+L0 1 83
+Z8 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z9 !s108 1640036286.000000
+!s107 C:/Users/ninom/OneDrive/Desktop/LAB_6/ADC.sv|
+Z10 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/ninom/OneDrive/Desktop/LAB_6|C:/Users/ninom/OneDrive/Desktop/LAB_6/ADC.sv|
+!i113 1
+Z11 o-sv -work work
+Z12 !s92 -sv -work work +incdir+C:/Users/ninom/OneDrive/Desktop/LAB_6
+Z13 tCvgOpt 0
+n@a@d@c
+vde0_nano_soc_baseline
+!s110 1640036284
+!i10b 1
+!s100 `[gl?NLD7]W`0g6BX[CY^2
+R3
+IDzUA:M7`Gz>goKa0;I:;X0
+R4
+R0
+w1640036209
+8C:/Users/ninom/OneDrive/Desktop/LAB_6/de0_nano_soc_baseline.v
+FC:/Users/ninom/OneDrive/Desktop/LAB_6/de0_nano_soc_baseline.v
+!i122 0
+L0 1 38
+R8
+r1
+!s85 0
+31
+!s108 1640036284.000000
+!s107 C:/Users/ninom/OneDrive/Desktop/LAB_6/de0_nano_soc_baseline.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ninom/OneDrive/Desktop/LAB_6|C:/Users/ninom/OneDrive/Desktop/LAB_6/de0_nano_soc_baseline.v|
+!i113 1
+Z14 o-vlog01compat -work work
+Z15 !s92 -vlog01compat -work work +incdir+C:/Users/ninom/OneDrive/Desktop/LAB_6
+R13
+vdigit_at_position_decoder
+R2
+!i10b 1
+!s100 ANQ2OFfE4ODJZzX2z9e3>1
+R3
+I2b2gG4^AYK2fISIO>jDVi3
+R4
+R0
+w1640029382
+8C:/Users/ninom/OneDrive/Desktop/LAB_6/digit_at_position_decoder.v
+FC:/Users/ninom/OneDrive/Desktop/LAB_6/digit_at_position_decoder.v
+!i122 2
+L0 1 46
+R8
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/ninom/OneDrive/Desktop/LAB_6/digit_at_position_decoder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ninom/OneDrive/Desktop/LAB_6|C:/Users/ninom/OneDrive/Desktop/LAB_6/digit_at_position_decoder.v|
+!i113 1
+R14
+R15
+R13
+vSDO_bits_sender
+R1
+R2
+!i10b 1
+!s100 zQC9IG7[MD@S3CLhc9HlJ2
+R3
+IA>3>bNCD<AhIOfb@8XY4@1
+R4
+S1
+R0
+R5
+R6
+R7
+!i122 4
+L0 88 24
+R8
+r1
+!s85 0
+31
+R9
+Z16 !s107 C:/Users/ninom/OneDrive/Desktop/LAB_6/ADC.sv|
+R10
+!i113 1
+R11
+R12
+R13
+n@s@d@o_bits_sender
+vsegment_decoder
+R2
+!i10b 1
+!s100 O[U6lIE0:e049eMCa`J=H3
+R3
+I1mT<HZL2P4]ji2cOZTmB;0
+R4
+R0
+w1640022746
+8C:/Users/ninom/OneDrive/Desktop/LAB_6/segmet_decoder.v
+FC:/Users/ninom/OneDrive/Desktop/LAB_6/segmet_decoder.v
+!i122 1
+L0 1 24
+R8
+r1
+!s85 0
+31
+!s108 1640036285.000000
+!s107 C:/Users/ninom/OneDrive/Desktop/LAB_6/segmet_decoder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ninom/OneDrive/Desktop/LAB_6|C:/Users/ninom/OneDrive/Desktop/LAB_6/segmet_decoder.v|
+!i113 1
+R14
+R15
+R13
+vtb
+R2
+!i10b 1
+!s100 gGlI[g_:NP_z8?D7XlPWa0
+R3
+IdlQnMYf6i^fG^cz<OTiLk2
+R4
+R0
+w1640028865
+8C:/Users/ninom/OneDrive/Desktop/LAB_6/tb.v
+FC:/Users/ninom/OneDrive/Desktop/LAB_6/tb.v
+!i122 3
+L0 1 9
+R8
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/ninom/OneDrive/Desktop/LAB_6/tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ninom/OneDrive/Desktop/LAB_6|C:/Users/ninom/OneDrive/Desktop/LAB_6/tb.v|
+!i113 1
+R14
+R15
+R13

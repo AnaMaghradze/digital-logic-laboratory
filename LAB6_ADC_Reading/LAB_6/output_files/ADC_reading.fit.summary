@@ -1,0 +1,20 @@
+Fitter Status : Successful - Mon Dec 20 23:51:19 2021
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 Patches 1.02i SJ Lite Edition
+Revision Name : ADC_reading
+Top-level Entity Name : de0_nano_soc_baseline
+Family : Cyclone V
+Device : 5CSEMA4U23C6
+Timing Models : Final
+Logic utilization (in ALMs) : 898 / 15,880 ( 6 % )
+Total registers : 961
+Total pins : 51 / 314 ( 16 % )
+Total virtual pins : 0
+Total block memory bits : 13,312 / 2,764,800 ( < 1 % )
+Total RAM Blocks : 2 / 270 ( < 1 % )
+Total DSP Blocks : 0 / 84 ( 0 % )
+Total HSSI RX PCSs : 0
+Total HSSI PMA RX Deserializers : 0
+Total HSSI TX PCSs : 0
+Total HSSI PMA TX Serializers : 0
+Total PLLs : 0 / 5 ( 0 % )
+Total DLLs : 0 / 4 ( 0 % )

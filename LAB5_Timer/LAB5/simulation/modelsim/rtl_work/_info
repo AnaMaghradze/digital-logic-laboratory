@@ -1,0 +1,108 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/ninom/OneDrive/Desktop/470L/LAB5/simulation/modelsim
+vde0_nano_soc_baseline
+!s110 1639843682
+!i10b 1
+!s100 kiF5[^Yfbz>61WQnMYBUO0
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IdM=QmS;=7if;2]2l2e9<B0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1639843613
+8C:/Users/ninom/OneDrive/Desktop/470L/LAB5/de0_nano_soc_baseline.v
+FC:/Users/ninom/OneDrive/Desktop/470L/LAB5/de0_nano_soc_baseline.v
+!i122 0
+L0 1 43
+Z3 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1639843681.000000
+!s107 C:/Users/ninom/OneDrive/Desktop/470L/LAB5/de0_nano_soc_baseline.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ninom/OneDrive/Desktop/470L/LAB5|C:/Users/ninom/OneDrive/Desktop/470L/LAB5/de0_nano_soc_baseline.v|
+!i113 1
+Z4 o-vlog01compat -work work
+Z5 !s92 -vlog01compat -work work +incdir+C:/Users/ninom/OneDrive/Desktop/470L/LAB5
+Z6 tCvgOpt 0
+vdecoder
+Z7 !s110 1639843683
+!i10b 1
+!s100 iJD?SHg6S`1Em<]5Z7Ef^3
+R1
+IB=4L2DU:G63]al0XSgWhz1
+R2
+R0
+w1639839401
+8C:/Users/ninom/OneDrive/Desktop/470L/LAB5/decoder.v
+FC:/Users/ninom/OneDrive/Desktop/470L/LAB5/decoder.v
+!i122 2
+L0 1 29
+R3
+r1
+!s85 0
+31
+Z8 !s108 1639843683.000000
+!s107 C:/Users/ninom/OneDrive/Desktop/470L/LAB5/decoder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ninom/OneDrive/Desktop/470L/LAB5|C:/Users/ninom/OneDrive/Desktop/470L/LAB5/decoder.v|
+!i113 1
+R4
+R5
+R6
+vdigitPositionDecoder
+!s110 1639843684
+!i10b 1
+!s100 KC8?@]2h>G?NUY]3B4lCV0
+R1
+I9<=hh9>WZefLQhi31ZSEY0
+R2
+R0
+w1639841872
+8C:/Users/ninom/OneDrive/Desktop/470L/LAB5/digitPositionDecoder.v
+FC:/Users/ninom/OneDrive/Desktop/470L/LAB5/digitPositionDecoder.v
+!i122 3
+L0 1 47
+R3
+r1
+!s85 0
+31
+!s108 1639843684.000000
+!s107 C:/Users/ninom/OneDrive/Desktop/470L/LAB5/digitPositionDecoder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ninom/OneDrive/Desktop/470L/LAB5|C:/Users/ninom/OneDrive/Desktop/470L/LAB5/digitPositionDecoder.v|
+!i113 1
+R4
+R5
+R6
+ndigit@position@decoder
+vtb
+R7
+!i10b 1
+!s100 jI>6]l@gj^lLIEi_n?TMU3
+R1
+Ii44Z_V:GV_Z5JgSniVeo>2
+R2
+R0
+w1639843601
+8C:/Users/ninom/OneDrive/Desktop/470L/LAB5/tb.v
+FC:/Users/ninom/OneDrive/Desktop/470L/LAB5/tb.v
+!i122 1
+L0 1 36
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/ninom/OneDrive/Desktop/470L/LAB5/tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ninom/OneDrive/Desktop/470L/LAB5|C:/Users/ninom/OneDrive/Desktop/470L/LAB5/tb.v|
+!i113 1
+R4
+R5
+R6

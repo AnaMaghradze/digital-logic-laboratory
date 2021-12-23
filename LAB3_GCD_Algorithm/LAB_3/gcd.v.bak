@@ -1,0 +1,55 @@
+ module GCD(
+	input clk, start,
+	input signed [7:0] A,
+	input signed [7:0] B,
+	output reg [7:0] gcd_result,
+	output reg ready
+);
+
+reg [7:0] a;
+reg [7:0] b;
+reg [7:0] r;
+reg [1:0] state = 0;
+reg done = 0;
+
+always @(posedge clk)
+begin
+	if(state == 0)
+	begin
+		a <= A[7] == 1 ? ~(A - 8'b00000001) : A;
+		b <= B[7] == 1 ? ~(B - 8'b00000001) : B;	
+		gcd_result <= 0;
+		ready <= 0;
+		if(start) state <= 1;
+	end
+	if(state == 1)
+	begin 
+		if(a == 0) 
+		begin
+			gcd_result[7:0] <= b;
+			state <= 2;
+		end
+		else if(b == 0) 
+		begin
+			gcd_result[7:0] <= a;
+			state <= 2;
+		end
+		else if(a > b)
+		begin
+			a <= a % b;
+			state <= 1;
+		end
+		else if(b > a)
+		begin
+			b <= b % a;
+			state <= 1;
+		end
+	end
+	if(state == 2)
+	begin		
+		ready <= 1;
+		if(ready) state <= 0;
+	end
+
+end
+endmodule

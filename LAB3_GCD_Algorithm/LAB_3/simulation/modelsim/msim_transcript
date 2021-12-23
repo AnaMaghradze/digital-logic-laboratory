@@ -1,0 +1,85 @@
+# Reading pref.tcl
+# do gcd-algorithm_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/ninom/OneDrive/Desktop/470L/LAB_3 {C:/Users/ninom/OneDrive/Desktop/470L/LAB_3/de0_nano_soc_baseline.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:21:33 on Nov 25,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/ninom/OneDrive/Desktop/470L/LAB_3" C:/Users/ninom/OneDrive/Desktop/470L/LAB_3/de0_nano_soc_baseline.v 
+# -- Compiling module de0_nano_soc_baseline
+# 
+# Top level modules:
+# 	de0_nano_soc_baseline
+# End time: 00:21:34 on Nov 25,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/ninom/OneDrive/Desktop/470L/LAB_3 {C:/Users/ninom/OneDrive/Desktop/470L/LAB_3/tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:21:36 on Nov 25,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/ninom/OneDrive/Desktop/470L/LAB_3" C:/Users/ninom/OneDrive/Desktop/470L/LAB_3/tb.v 
+# -- Compiling module tb
+# 
+# Top level modules:
+# 	tb
+# End time: 00:21:36 on Nov 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/ninom/OneDrive/Desktop/470L/LAB_3 {C:/Users/ninom/OneDrive/Desktop/470L/LAB_3/gcd.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:21:36 on Nov 25,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/ninom/OneDrive/Desktop/470L/LAB_3" C:/Users/ninom/OneDrive/Desktop/470L/LAB_3/gcd.v 
+# -- Compiling module GCD
+# 
+# Top level modules:
+# 	GCD
+# End time: 00:21:36 on Nov 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.tb
+# vsim work.tb 
+# Start time: 00:21:40 on Nov 25,2021
+# Loading work.tb
+# Loading work.de0_nano_soc_baseline
+# Loading work.GCD
+do C:/Users/ninom/OneDrive/Desktop/470L/LAB_3/simulation/modelsim/wave.do
+run
+run
+run
+run
+run
+run
+run
+run
+restart
+run
+run
+run
+run
+run
+vlog -vlog01compat -work work +incdir+C:/Users/ninom/OneDrive/Desktop/470L/LAB_3 C:/Users/ninom/OneDrive/Desktop/470L/LAB_3/tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:28:05 on Nov 25,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/ninom/OneDrive/Desktop/470L/LAB_3" C:/Users/ninom/OneDrive/Desktop/470L/LAB_3/tb.v 
+# -- Compiling module tb
+# 
+# Top level modules:
+# 	tb
+# End time: 00:28:06 on Nov 25,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+restart
+# Loading work.tb
+restart
+run
+run
+run
+run
+run
+run
+# End time: 00:28:21 on Nov 25,2021, Elapsed time: 0:06:41
+# Errors: 0, Warnings: 0

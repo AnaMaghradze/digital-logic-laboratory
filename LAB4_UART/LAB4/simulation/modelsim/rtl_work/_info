@@ -1,0 +1,107 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/ninom/OneDrive/Desktop/470L/LAB4/simulation/modelsim
+vde0_nano_soc_baseline
+Z1 !s110 1638644296
+!i10b 1
+!s100 kof9X5UE;ie[:zl?=]7Vd2
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I]oU:cb0@linkg5LPKLDlP2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1638644006
+8C:/Users/ninom/OneDrive/Desktop/470L/LAB4/de0_nano_soc_baseline.v
+FC:/Users/ninom/OneDrive/Desktop/470L/LAB4/de0_nano_soc_baseline.v
+!i122 12
+L0 1 56
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1638644296.000000
+!s107 C:/Users/ninom/OneDrive/Desktop/470L/LAB4/de0_nano_soc_baseline.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ninom/OneDrive/Desktop/470L/LAB4|C:/Users/ninom/OneDrive/Desktop/470L/LAB4/de0_nano_soc_baseline.v|
+!i113 1
+Z6 o-vlog01compat -work work
+Z7 !s92 -vlog01compat -work work +incdir+C:/Users/ninom/OneDrive/Desktop/470L/LAB4
+Z8 tCvgOpt 0
+vreceiver
+R1
+!i10b 1
+!s100 SMbRNEYWe2YSB8S4M44LQ0
+R2
+IV4QGZ=0A^bMOG430I?8bL2
+R3
+R0
+w1638643993
+8C:/Users/ninom/OneDrive/Desktop/470L/LAB4/RX.v
+FC:/Users/ninom/OneDrive/Desktop/470L/LAB4/RX.v
+!i122 13
+L0 1 44
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/ninom/OneDrive/Desktop/470L/LAB4/RX.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ninom/OneDrive/Desktop/470L/LAB4|C:/Users/ninom/OneDrive/Desktop/470L/LAB4/RX.v|
+!i113 1
+R6
+R7
+R8
+vtb
+Z9 !s110 1638644297
+!i10b 1
+!s100 HF4T9QadB0lPn`3oI`N;22
+R2
+I7e<XgY:?d@AUmj;?SDN3K3
+R3
+R0
+w1638644277
+8C:/Users/ninom/OneDrive/Desktop/470L/LAB4/tb.v
+FC:/Users/ninom/OneDrive/Desktop/470L/LAB4/tb.v
+!i122 14
+L0 1 30
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/ninom/OneDrive/Desktop/470L/LAB4/tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ninom/OneDrive/Desktop/470L/LAB4|C:/Users/ninom/OneDrive/Desktop/470L/LAB4/tb.v|
+!i113 1
+R6
+R7
+R8
+vtransmitter
+R9
+!i10b 1
+!s100 ?8]W`fVlY;WgNGHdkJP@n0
+R2
+Il3A<IWQWC`B[B0RW9X3UP0
+R3
+R0
+w1638642144
+8C:/Users/ninom/OneDrive/Desktop/470L/LAB4/TX.v
+FC:/Users/ninom/OneDrive/Desktop/470L/LAB4/TX.v
+!i122 15
+L0 1 58
+R4
+r1
+!s85 0
+31
+!s108 1638644297.000000
+!s107 C:/Users/ninom/OneDrive/Desktop/470L/LAB4/TX.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ninom/OneDrive/Desktop/470L/LAB4|C:/Users/ninom/OneDrive/Desktop/470L/LAB4/TX.v|
+!i113 1
+R6
+R7
+R8

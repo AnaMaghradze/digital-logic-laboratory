@@ -1,0 +1,96 @@
+module ADC_reading(
+	input logic clk,
+	input logic start,	
+	input  logic SDO,
+	output logic SDI, 	
+	output logic SCK,
+	output logic CONVST,
+	output logic [11:0] digital_out,
+	output logic start_display
+);
+
+localparam T_whconv = 1; // 20ns
+localparam T_conv = 35; // 1 / 1.3e-6 = 769,230.7692, 25mln / 769,230.7692 ==> 32.5
+
+reg [2:0] clock_counter = 0;
+reg [2:0] clock_counter_reg;
+
+reg SCK_reg_0;
+reg SCK_reg_1;
+
+reg start_reading_reg_0;
+reg start_reading_reg_1;
+
+integer t_conv_counter = 0;
+integer t_whconv_counter = 0;
+integer bits_counter = 0;
+
+reg start_conversion = 0;
+reg start_reading = 0; 
+reg reading_finished = 0;
+
+/*
+channel[0] => S/D = 1;
+channel[1] => O/S = 0;
+channel[2] => S1  = 1;
+channel[3] => S0  = 0;
+channel[4] => UNI = 1;
+channel[5] => SLP = 0;
+*/
+reg [5:0] channel = 6'b010101; // channel #4, unipolar, no sleep mode
+
+assign start_display = start_reading;
+assign SCK = clk & start_reading;
+
+//assign SCK_reg_0 = clock_counter[1] && start_reading; 
+ 
+always @(posedge SCK) digital_out[11 - bits_counter] <= SDO;
+
+always @(negedge clk) 
+begin
+
+	if(start && ~start_conversion) 
+	begin
+		CONVST <= 1;
+	end		
+
+	// handling t_WHCONV, start conversion
+	if(t_whconv_counter == T_whconv)
+	begin
+		start_conversion <= 1;
+		CONVST <= 0;
+		t_whconv_counter <= 0;			
+	end
+	else t_whconv_counter <= t_whconv_counter + 1;	
+		
+	// handling t_CONV, start reading
+	if(start_conversion)
+	begin
+		if(t_conv_counter == T_conv)
+		begin
+			start_reading <= 1; 
+			t_conv_counter <= 0;
+			start_conversion <= 0;
+		end
+		else t_conv_counter <= t_conv_counter + 1;
+	end
+		
+	// handle bits count, send config
+	if(start_reading) 
+	begin
+		bits_counter <= bits_counter + 1;
+		if(bits_counter == 12)
+		begin
+			start_reading <= 0;
+//				reading_finished <= 1;
+		end
+		else 
+		begin
+//				reading_finished <= 0;
+			if(bits_counter < 6) SDI <= channel[bits_counter-1];
+		end
+	end		
+	
+end
+
+endmodule
